@@ -14,6 +14,7 @@ type Title struct {
 func (Title) Fields() []ent.Field {
 	return []ent.Field{
 		field.String("title").NotEmpty(),
+		field.String("name.title").NotEmpty(),
 	}
 }
 
